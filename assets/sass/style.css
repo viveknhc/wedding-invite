@@ -1,139 +1,20 @@
-/*------------------------------------------------------------------
-[Master Stylesheet]
-Theme Name:     Habibi - Wedding & Wedding Planner HTML5 Template
-Version:        1.0.0
--------------------------------------------------------------------*/
-/*--------------------------------------------------------------
->>> TABLE OF CONTENTS:
-----------------------------------------------------------------
 
-1. General
-	1.1 Theme Reset Style
-	1.2 Global Elements
-
-2. header
-	2.1 topbar
-	2.2 navigation
-
-3. content
-	3.1 wpo-hero-slider
-	3.2 wpo-couple-section
-	3.3 wpo-story-section
-	3.4 wpo-portfolio-section
-	3.5 wpo-contact-section
-	3.6 wpo-event-section
-	3.7 wpo-blog-section
-
-4. wpo-footer
-
-5. Home-style-2
-	5.1 wpo-couple-section-s2
-	5.2 wpo-story-section-s2
-	5.3 wpo-team-section
-	5.4 wpo-team-section
-
-6. Home-style-3
-	6.1 wpo-wedding-date
-	6.2 wpo-couple-section-s3
-	6.3 wpo-video-section
-	6.4 wpo-story-section-s3
-	6.5 wpo-contact-section-s3
-	6.6 wpo-event-section-s2
-
-7. Home-style-4
-	7.1 wpo-partners-section
-	7.2 wpo-couple-section-s4
-	7.3 wpo-story-section-s4
-	7.4 wpo-portfolio-section-s2
-	7.5 wpo-team-section
-	7.6 wpo-contact-section-s4
-	7.7 wpo-event-section-s3
-
-8. Home-style-5
-	8.1 wpo-wedding-countdown
-	8.2 wpo-couple-section-s5
-	8.3 wpo-story-section-s5
-	8.4 wpo-contact-section-s5
-	8.5 wpo-event-section-s4
-
-
-9. Home-style-6
-	9.1 wpo-wedding-countdown-s2
-	9.2 wpo-couple-section-s6
-	9.3 wpo-story-section-s6
-
-10. Home-style-7
-	10.1 wpo-Service-section
-	10.2 wpo-portfolio-section-s3
-	10.3 wpo-fun-fact-section
-	10.4 wpo-testimonial-section
-	10.5 wpo-contact-section-s6
-	10.6 wpo-product-section
-	10.7 wpo-pricing-section
-
-11. Home-style-8
-	11.1 wpo-about-section
-	11.2 wpo-service-section-s2
-	11.3 wpo-testimonial-section-s2
-	11.4 wpo-contact-section-s6
-	11.5 wpo-portfolio-section-s4
-
-12. Home-style-9
-	12.1 wpo-about-section-s2
-	12.2 wpo-video-section-s2
-	12.3 wpo-service-section-s3
-	12.4 wpo-testimonial-section-s3
-	12.5 wpo-offer-section
-	12.6 wpo-contact-section-s7
-
-13. wpo-invitation-area
-
-14. wpo-shop-home
-    14.1 wpo-about-section
-	14.2 wpo-offer-section-s2
-
-15. shop-home-2
-	15.1 wpo-category-section
-	15.2 wpo-offer-section-s3
-
-16. shop-home-3
-	16.1 wpo-category-section-s2
-	16.2 wpo-order-section
-
-17. rtl-page
-
-18. wpo-service-single
-
-19. coming-soon-section
-
-20. wpo-cart-page-style
-
-21. wpo-checkout-page-style
-
-22. wpo-shop-page
-
-23. wpo-shop-single-page
-
-24. wpo-team-single
-
-25. wpo-portfolio-single-section
-
-26. wpo-blog-pg-section
-
-27. wpo-blog-single-section
-
-28. wpo-contact-pg-section
-
-29. error-404-section
-
-----------------------------------------------------------------*/
-/*------------------------------------------------------------------
-1. General
-----------------------------------------------------------------*/
 /*---------------------------
 	Fonts
 ----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Manrope&family=Pacifico&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;800;900&amp;family=Sail&amp;display=swap");
+
+@font-face {
+  font-family: Misologist;
+  src: url('../fonts/Misologist.otf');
+
+  font-family: Gratina;
+  src: url('../fonts/Gratina.otf');
+
+  font-family: Klaristha-Thin;
+  src: url('../fonts/Klaristha-Thin.ttf');
+}
 /* 1.1 Theme Reset Style */
 html {
   font-size: 15px;
@@ -5627,6 +5508,7 @@ a.ui-button:active, .ui-button:active,
 }
 
 .static-hero-s4 .wpo-hero-img h3 {
+  font-family: 'Pacifico', cursive;
   font-size: 30px;
   font-style: normal;
   font-weight: 400;
@@ -5691,8 +5573,9 @@ a.ui-button:active, .ui-button:active,
 @media (max-width: 1399px) {
   .static-hero-s4 .wpo-static-hero-inner .slide-title h2 {
     font-size: 55px;
-    font-size: 60px;
-    font-family: 'Dancing Script', cursive;
+    font-size: 75px;
+    font-family: 'Klaristha-Thin';
+    font-weight: 800;
   }
 }
 
@@ -13333,12 +13216,12 @@ a.ui-button:active, .ui-button:active,
   }
 }
 
-.wpo-story-section-s4 .story-timeline > .row + .row,
+/* .wpo-story-section-s4 .story-timeline > .row + .row,
 .wpo-story-section-s5 .story-timeline > .row + .row,
 .wpo-story-section-s6 .story-timeline > .row + .row {
   margin-top: 30px;
   padding-top: 15px;
-}
+} */
 
 @media (max-width: 991px) {
   .wpo-story-section-s4 .story-timeline > .row + .row,
@@ -13521,6 +13404,7 @@ a.ui-button:active, .ui-button:active,
   .wpo-story-section-s6 .story-timeline h3 {
     font-size: 35px;
     font-size: 2.33333rem;
+    font-family: 'Pacifico', cursive;
   }
 }
 
@@ -14126,6 +14010,7 @@ a.ui-button:active, .ui-button:active,
   .wpo-couple-section-s6 .text-grid h3,
   .wpo-couple-section-s7 .text-grid h3 {
     font-size: 32px;
+    font-family: 'Pacifico', cursive;
   }
 }
 
@@ -14198,13 +14083,13 @@ a.ui-button:active, .ui-button:active,
   border-radius: 0;
   padding: 50px 0;
   position: relative;
-  border: 1px solid #C8A898;
+  /* border: 1px solid #C8A898; */
 }
 
 .wpo-story-section-s5 .story-timeline .img-holder img {
   border-radius: 0;
-  -webkit-animation: vector-animation 6s infinite;
-          animation: vector-animation 6s infinite;
+  /* -webkit-animation: vector-animation 6s infinite;
+          animation: vector-animation 6s infinite; */
 }
 
 .wpo-story-section-s5 .story-timeline .img-holder:before {
@@ -14212,7 +14097,7 @@ a.ui-button:active, .ui-button:active,
   height: 100%;
   left: 0;
   top: 0;
-  border-color: #C8A898;
+  /* border-color: #C8A898; */
   border-radius: 0;
   -webkit-transform: rotate(-3.373deg);
           transform: rotate(-3.373deg);
@@ -24476,6 +24361,7 @@ a.ui-button:active, .ui-button:active,
 .location {
   border: 1px solid #C8A898;
   padding: 20px;
+  margin: 0 0 20px 0;
 }
 
 .location::before {
@@ -24492,3 +24378,14 @@ a.ui-button:active, .ui-button:active,
 iframe {
   filter: saturate(0.5);
 }
+
+.add-calendar-box {
+  display: flex;
+  justify-content: center;
+}
+
+
+.add-calendar-box .atcb-date-btn-left{
+  background-color:  red !important;
+}
+
